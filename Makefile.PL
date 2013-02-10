@@ -22,12 +22,12 @@ my %WriteMakefileArgs = (
   "LICENSE" => "perl",
   "NAME" => "Dist::Zilla::Plugin::UploadToDuckPAN",
   "PREREQ_PM" => {
-    "CPAN::Uploader" => "0.103000",
+    "CPAN::Uploader" => "0.103002",
     "Crypt::SSLeay" => "0.58",
-    "Dist::Zilla" => "4.300006",
-    "Moose" => 0
+    "Dist::Zilla" => "4.300030",
+    "Moose" => "2.0604"
   },
-  "VERSION" => "0.001",
+  "VERSION" => "0.002",
   "test" => {
     "TESTS" => "t/*.t"
   }

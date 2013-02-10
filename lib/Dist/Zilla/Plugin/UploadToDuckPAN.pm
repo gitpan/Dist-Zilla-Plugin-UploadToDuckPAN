@@ -3,12 +3,14 @@ BEGIN {
   $Dist::Zilla::Plugin::UploadToDuckPAN::AUTHORITY = 'cpan:GETTY';
 }
 {
-  $Dist::Zilla::Plugin::UploadToDuckPAN::VERSION = '0.001';
+  $Dist::Zilla::Plugin::UploadToDuckPAN::VERSION = '0.002';
 }
 # ABSTRACT: Dist::Zilla plugin to upload to https://duckpan.org/ via https://dukgo.com/
 
 use Moose;
 extends 'Dist::Zilla::Plugin::UploadToCPAN';
+
+use Scalar::Util qw(weaken);
 
 has '+credentials_stash' => (
 	default => sub { '%DUKGO' }
@@ -21,6 +23,46 @@ has 'upload_uri' => (
 );
 sub has_upload_uri { 1 }
 
+has '+username' => (
+  default  => sub {
+    my ($self) = @_;
+    return $self->_credential('username')
+        || $self->pause_cfg->{user}
+        || $self->zilla->chrome->prompt_str("dukgo.com username: ");
+  },
+);
+ 
+ 
+has '+password' => (
+  default  => sub {
+    my ($self) = @_;
+    return $self->_credential('password')
+        || $self->pause_cfg->{password}
+        || $self->zilla->chrome->prompt_str('dukgo.com password: ', { noecho => 1 });
+  },
+);
+
+has '+uploader' => (
+  default => sub {
+    my ($self) = @_;
+ 
+    my $uploader = Dist::Zilla::Plugin::UploadToCPAN::_Uploader->new({
+      user     => $self->username,
+      password => $self->password,
+      ($self->has_subdir
+           ? (subdir => $self->subdir) : ()),
+      ($self->has_upload_uri
+           ? (upload_uri => $self->upload_uri) : ()),
+      target => 'dukgo.com',
+    });
+ 
+    $uploader->{'Dist::Zilla'}{plugin} = $self;
+    weaken $uploader->{'Dist::Zilla'}{plugin};
+ 
+    return $uploader;
+  }
+);
+ 
 1;
 
 
@@ -33,7 +75,7 @@ Dist::Zilla::Plugin::UploadToDuckPAN - Dist::Zilla plugin to upload to https://d
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 
@@ -76,7 +118,7 @@ Torsten Raudssus <torsten@raudssus.de>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2012 by Torsten Raudssus.
+This software is copyright (c) 2012 by DuckDuckGo, Inc. L<http://duckduckgo.com/>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

@@ -1,4 +1,62 @@
-Revision history for Dist-Zilla-Plugin-UploadToDuckPAN
+==================================================
+Changes from 1739-04-29 00:00:00 +0000 to present.
+==================================================
 
-0.001     2012-01-19 02:36:58 Europe/Berlin
-	- First working version of plugin
+------------------------------------------
+version 0.002 at 2013-02-10 23:18:12 +0000
+------------------------------------------
+
+  Change: 3a7c62d3565a3d373ae92a511663f87cedb98171
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-02-11 00:17:03 +0000
+
+    Removed changes cause of switch of the dzil bundle 
+
+  Change: 1b0e0f27d653607c888a1b781a3446b408732cf3
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-02-11 00:16:07 +0000
+
+    Tied up the requirements 
+
+  Change: 72b21537bdf5e016a8111f4f82b6e228f5e94373
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-02-11 00:13:46 +0000
+
+    Fixed the deeper texts of UploadToCPAN to replace PAUSE with
+    dukgo.com 
+
+  Change: c98c3275926a9ab893475502ac1e295c96f42d82
+  Author: Torsten Raudssus <github@raudssus.de>
+  Date : 2012-01-19 03:58:56 +0000
+
+    Changed copyright holder 
+
+  Change: 442d64f3179a1fa8faed3d48f829a71cad2edcec
+  Author: Torsten Raudssus <github@raudssus.de>
+  Date : 2012-01-19 02:44:56 +0000
+
+    v0.001
+
+    - First working version of plugin 
+
+  Change: 290adca225b4b295dca50ef11ffeaf6604f20bd7
+  Author: Torsten Raudssus <github@raudssus.de>
+  Date : 2012-01-19 02:36:13 +0000
+
+    Requirement for SSL, more documentation 
+
+  Change: a621027c981b7dbe48c08c629296764787e7c773
+  Author: Torsten Raudssus <github@raudssus.de>
+  Date : 2012-01-19 01:48:35 +0000
+
+    First working version 
+
+  Change: be8c4d839dcfdc9c085cc0aba1ff3def3addd07c
+  Author: Torsten Raudssus <github@raudssus.de>
+  Date : 2012-01-18 21:31:51 +0000
+
+    initial commit 
+
+================
+End of releases.
+================

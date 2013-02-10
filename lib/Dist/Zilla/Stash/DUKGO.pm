@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::Stash::DUKGO::AUTHORITY = 'cpan:GETTY';
 }
 {
-  $Dist::Zilla::Stash::DUKGO::VERSION = '0.001';
+  $Dist::Zilla::Stash::DUKGO::VERSION = '0.002';
 }
 # ABSTRACT: Stash for handling %DUKGO credentials
 
@@ -22,7 +22,7 @@ Dist::Zilla::Stash::DUKGO - Stash for handling %DUKGO credentials
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =encoding utf8
 
@@ -51,7 +51,7 @@ Torsten Raudssus <torsten@raudssus.de>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2012 by Torsten Raudssus.
+This software is copyright (c) 2012 by DuckDuckGo, Inc. L<http://duckduckgo.com/>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
