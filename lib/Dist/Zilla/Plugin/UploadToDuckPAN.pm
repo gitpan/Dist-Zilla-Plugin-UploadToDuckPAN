@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::Plugin::UploadToDuckPAN::AUTHORITY = 'cpan:GETTY';
 }
 {
-  $Dist::Zilla::Plugin::UploadToDuckPAN::VERSION = '0.002';
+  $Dist::Zilla::Plugin::UploadToDuckPAN::VERSION = '0.003';
 }
 # ABSTRACT: Dist::Zilla plugin to upload to https://duckpan.org/ via https://dukgo.com/
 
@@ -75,7 +75,7 @@ Dist::Zilla::Plugin::UploadToDuckPAN - Dist::Zilla plugin to upload to https://d
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 

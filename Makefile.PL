@@ -12,6 +12,7 @@ my %WriteMakefileArgs = (
   "ABSTRACT" => "Dist::Zilla plugin to upload to https://duckpan.org/ via https://dukgo.com/",
   "AUTHOR" => "Torsten Raudssus <torsten\@raudssus.de>",
   "BUILD_REQUIRES" => {
+    "Test::LoadAllModules" => "0.021",
     "Test::More" => "0.96"
   },
   "CONFIGURE_REQUIRES" => {
@@ -27,7 +28,7 @@ my %WriteMakefileArgs = (
     "Dist::Zilla" => "4.300030",
     "Moose" => "2.0604"
   },
-  "VERSION" => "0.002",
+  "VERSION" => "0.003",
   "test" => {
     "TESTS" => "t/*.t"
   }
