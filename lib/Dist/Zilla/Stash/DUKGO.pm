@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::Stash::DUKGO::AUTHORITY = 'cpan:GETTY';
 }
 {
-  $Dist::Zilla::Stash::DUKGO::VERSION = '0.003';
+  $Dist::Zilla::Stash::DUKGO::VERSION = '0.004';
 }
 # ABSTRACT: Stash for handling %DUKGO credentials
 
@@ -22,7 +22,7 @@ Dist::Zilla::Stash::DUKGO - Stash for handling %DUKGO credentials
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =encoding utf8
 

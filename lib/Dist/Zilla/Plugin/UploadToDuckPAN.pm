@@ -3,12 +3,14 @@ BEGIN {
   $Dist::Zilla::Plugin::UploadToDuckPAN::AUTHORITY = 'cpan:GETTY';
 }
 {
-  $Dist::Zilla::Plugin::UploadToDuckPAN::VERSION = '0.003';
+  $Dist::Zilla::Plugin::UploadToDuckPAN::VERSION = '0.004';
 }
 # ABSTRACT: Dist::Zilla plugin to upload to https://duckpan.org/ via https://dukgo.com/
 
 use Moose;
 extends 'Dist::Zilla::Plugin::UploadToCPAN';
+
+use Dist::Zilla::Plugin::UploadToCPAN;
 
 use Scalar::Util qw(weaken);
 
@@ -45,7 +47,10 @@ has '+password' => (
 has '+uploader' => (
   default => sub {
     my ($self) = @_;
- 
+
+    require CPAN::Uploader;
+    CPAN::Uploader->VERSION('0.103004');  # require HTTPS
+
     my $uploader = Dist::Zilla::Plugin::UploadToCPAN::_Uploader->new({
       user     => $self->username,
       password => $self->password,
@@ -75,7 +80,7 @@ Dist::Zilla::Plugin::UploadToDuckPAN - Dist::Zilla plugin to upload to https://d
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 SYNOPSIS
 

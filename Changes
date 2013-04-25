@@ -1,10 +1,28 @@
 ==================================================
-Changes from 1739-06-23 00:00:00 +0000 to present.
+Changes from 1739-07-12 00:00:00 +0000 to present.
 ==================================================
 
 ------------------------------------------
-version 0.003 at 2013-04-06 21:16:10 +0000
+version 0.004 at 2013-04-25 15:56:14 +0000
 ------------------------------------------
+
+  Change: 69255dcf6ab013080f33eeecb4b2631715a46bcd
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-04-25 17:56:07 +0000
+
+    Added travis.yml 
+
+  Change: 08dca9862a6030c31544d6783440dbcf369e153f
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-04-25 17:55:25 +0000
+
+    Bumped requirements 
+
+  Change: afa62f0248b08f0047152a979609a67a5a0d7a99
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-04-25 17:54:24 +0000
+
+    Fixed situation with new Dist::Zilla::Plugin::UploadToCPAN 
 
   Change: 3a7c62d3565a3d373ae92a511663f87cedb98171
   Author: Torsten Raudssus <torsten@raudss.us>
