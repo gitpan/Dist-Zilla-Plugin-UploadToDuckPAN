@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::Stash::DUKGO::AUTHORITY = 'cpan:GETTY';
 }
 {
-  $Dist::Zilla::Stash::DUKGO::VERSION = '0.004';
+  $Dist::Zilla::Stash::DUKGO::VERSION = '0.005';
 }
 # ABSTRACT: Stash for handling %DUKGO credentials
 
@@ -12,8 +12,8 @@ extends 'Dist::Zilla::Stash::PAUSE';
 
 1;
 
-
 __END__
+
 =pod
 
 =head1 NAME
@@ -22,7 +22,7 @@ Dist::Zilla::Stash::DUKGO - Stash for handling %DUKGO credentials
 
 =head1 VERSION
 
-version 0.004
+version 0.005
 
 =encoding utf8
 
@@ -57,4 +57,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-

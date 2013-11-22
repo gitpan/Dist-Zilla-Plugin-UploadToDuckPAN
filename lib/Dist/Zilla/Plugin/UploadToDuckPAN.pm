@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::Plugin::UploadToDuckPAN::AUTHORITY = 'cpan:GETTY';
 }
 {
-  $Dist::Zilla::Plugin::UploadToDuckPAN::VERSION = '0.004';
+  $Dist::Zilla::Plugin::UploadToDuckPAN::VERSION = '0.005';
 }
 # ABSTRACT: Dist::Zilla plugin to upload to https://duckpan.org/ via https://dukgo.com/
 
@@ -21,7 +21,7 @@ has '+credentials_stash' => (
 has 'upload_uri' => (
 	is => 'ro',
 	isa => 'Str',
-	default => sub { 'https://dukgo.com/duckpan/do/upload' }
+	default => sub { 'https://dukgo.com/duckpan/upload' }
 );
 sub has_upload_uri { 1 }
 
@@ -70,8 +70,8 @@ has '+uploader' => (
  
 1;
 
-
 __END__
+
 =pod
 
 =head1 NAME
@@ -80,7 +80,7 @@ Dist::Zilla::Plugin::UploadToDuckPAN - Dist::Zilla plugin to upload to https://d
 
 =head1 VERSION
 
-version 0.004
+version 0.005
 
 =head1 SYNOPSIS
 
@@ -129,4 +129,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-

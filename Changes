@@ -1,10 +1,28 @@
 ==================================================
-Changes from 1739-07-12 00:00:00 +0000 to present.
+Changes from 1740-02-08 00:00:00 +0000 to present.
 ==================================================
 
 ------------------------------------------
-version 0.004 at 2013-04-25 15:56:14 +0000
+version 0.005 at 2013-11-22 18:49:44 +0000
 ------------------------------------------
+
+  Change: d3bdd7b1dc84821416962092cbaf36493637914b
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-11-22 19:49:32 +0000
+
+    New travis config 
+
+  Change: 41b3468362bed71b937dcff51c9c15d986af4400
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-11-22 19:49:07 +0000
+
+    Changed upload URL 
+
+  Change: 5b5154ee1fba992efe8cde9f97cb886554fce475
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-05-03 00:32:31 +0000
+
+    Added new .travis.yml 
 
   Change: 69255dcf6ab013080f33eeecb4b2631715a46bcd
   Author: Torsten Raudssus <torsten@raudss.us>
