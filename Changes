@@ -1,10 +1,16 @@
 ==================================================
-Changes from 1740-02-08 00:00:00 +0000 to present.
+Changes from 1740-02-20 00:00:00 +0000 to present.
 ==================================================
 
 ------------------------------------------
-version 0.005 at 2013-11-22 18:49:44 +0000
+version 0.006 at 2013-12-04 22:57:04 +0000
 ------------------------------------------
+
+  Change: 44b68e3933aefde02f75f21cb3e32a93e69601f5
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-12-04 23:56:48 +0000
+
+    New target URL, new stash name (with legacy handling) 
 
   Change: d3bdd7b1dc84821416962092cbaf36493637914b
   Author: Torsten Raudssus <torsten@raudss.us>

@@ -7,5 +7,6 @@ Makefile.PL
 README
 dist.ini
 lib/Dist/Zilla/Plugin/UploadToDuckPAN.pm
+lib/Dist/Zilla/Stash/DUCKPAN.pm
 lib/Dist/Zilla/Stash/DUKGO.pm
 t/release-pod-syntax.t

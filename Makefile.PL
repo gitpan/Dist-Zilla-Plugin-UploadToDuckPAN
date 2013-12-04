@@ -23,13 +23,14 @@ my %WriteMakefileArgs = (
     "CPAN::Uploader" => "0.103004",
     "Crypt::SSLeay" => "0.64",
     "Dist::Zilla" => "4.300034",
-    "Moose" => "2.0604"
+    "Moose" => "2.0604",
+    "URI" => 0
   },
   "TEST_REQUIRES" => {
     "Test::LoadAllModules" => "0.021",
     "Test::More" => "0.96"
   },
-  "VERSION" => "0.005",
+  "VERSION" => "0.006",
   "test" => {
     "TESTS" => "t/*.t"
   }

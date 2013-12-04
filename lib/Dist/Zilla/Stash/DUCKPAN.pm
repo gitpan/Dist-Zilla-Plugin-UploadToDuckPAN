@@ -1,11 +1,11 @@
-package Dist::Zilla::Stash::DUKGO;
+package Dist::Zilla::Stash::DUCKPAN;
 BEGIN {
-  $Dist::Zilla::Stash::DUKGO::AUTHORITY = 'cpan:GETTY';
+  $Dist::Zilla::Stash::DUCKPAN::AUTHORITY = 'cpan:GETTY';
 }
 {
-  $Dist::Zilla::Stash::DUKGO::VERSION = '0.006';
+  $Dist::Zilla::Stash::DUCKPAN::VERSION = '0.006';
 }
-# ABSTRACT: Stash for handling %DUKGO credentials
+# ABSTRACT: Stash for handling %DUCKPAN credentials
 
 use Moose;
 extends 'Dist::Zilla::Stash::PAUSE';
@@ -18,7 +18,7 @@ __END__
 
 =head1 NAME
 
-Dist::Zilla::Stash::DUKGO - Stash for handling %DUKGO credentials
+Dist::Zilla::Stash::DUCKPAN - Stash for handling %DUCKPAN credentials
 
 =head1 VERSION
 
