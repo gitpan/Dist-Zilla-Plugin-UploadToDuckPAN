@@ -49,7 +49,7 @@
          "web" : "https://github.com/duckduckgo/p5-dist-zilla-plugin-uploadtoduckpan"
       }
    },
-   "version" : "0.006",
+   "version" : "0.007",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.018000"
@@ -124,6 +124,11 @@
             "class" : "Dist::Zilla::Plugin::UploadToCPAN",
             "name" : "@Author::GETTY/@Basic/UploadToCPAN",
             "version" : "4.300039"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::UploadToDuckPAN",
+            "name" : "@Author::GETTY/UploadToDuckPAN",
+            "version" : "0.006"
          },
          {
             "class" : "Dist::Zilla::Plugin::Git::NextVersion",

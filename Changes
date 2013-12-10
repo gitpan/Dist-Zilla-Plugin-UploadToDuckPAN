@@ -1,10 +1,16 @@
 ==================================================
-Changes from 1740-02-20 00:00:00 +0000 to present.
+Changes from 1740-02-26 00:00:00 +0000 to present.
 ==================================================
 
 ------------------------------------------
-version 0.006 at 2013-12-04 22:57:04 +0000
+version 0.007 at 2013-12-10 00:32:02 +0000
 ------------------------------------------
+
+  Change: eebb3e1a3316d45a4d3f9aabdb3581310e6bce0e
+  Author: Torsten Raudssus <torsten@raudss.us>
+  Date : 2013-12-09 23:50:06 +0000
+
+    Also upload module to duckpan on release 
 
   Change: 44b68e3933aefde02f75f21cb3e32a93e69601f5
   Author: Torsten Raudssus <torsten@raudss.us>

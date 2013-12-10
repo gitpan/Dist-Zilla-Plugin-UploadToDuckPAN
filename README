@@ -1,7 +1,7 @@
 
 
 This archive contains the distribution Dist-Zilla-Plugin-UploadToDuckPAN,
-version 0.006:
+version 0.007:
 
   Dist::Zilla plugin to upload to https://duckpan.org/ via https://dukgo.com/
 

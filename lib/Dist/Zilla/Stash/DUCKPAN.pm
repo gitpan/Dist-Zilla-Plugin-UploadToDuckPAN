@@ -3,7 +3,7 @@ BEGIN {
   $Dist::Zilla::Stash::DUCKPAN::AUTHORITY = 'cpan:GETTY';
 }
 {
-  $Dist::Zilla::Stash::DUCKPAN::VERSION = '0.006';
+  $Dist::Zilla::Stash::DUCKPAN::VERSION = '0.007';
 }
 # ABSTRACT: Stash for handling %DUCKPAN credentials
 
@@ -22,7 +22,7 @@ Dist::Zilla::Stash::DUCKPAN - Stash for handling %DUCKPAN credentials
 
 =head1 VERSION
 
-version 0.006
+version 0.007
 
 =encoding utf8
 
